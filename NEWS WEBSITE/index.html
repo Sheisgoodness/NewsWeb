@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub</title>
+
+    <!---------- Font Awesome ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!---------- CSS style ---------->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NewsHub</div>
+
+        <div class="inputSearch desktop">
+            <form id="searchForm">
+                <input type="text" placeholder="Search..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <nav class="desktop">
+            <ul>
+                <li onclick="Search('tech')">Tech</li>
+                <li onclick="Search('women')">Women</li>
+                <li onclick="Search('trending')">Trending</li>
+                <li onclick="Search('nigeria economy')">Nigeria Economy</li>
+                <li onclick="Search('food')">Food</li>
+            </ul>
+        </nav>
+
+        <div class="menuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!---------- Mobile Menu ---------->
+        <div class="mobile hidden">
+            <nav>
+                <ul>
+                    <li onclick="Search('tech')">Tech</li>
+                    <li onclick="Search('women')">Women</li>
+                    <li onclick="Search('trending')">Trending</li>
+                    <li onclick="Search('nigeria economy')">Nigeria Economy</li>
+                    <li onclick="Search('food')">Food</li>
+                </ul>
+            </nav>
+            <div class="inputSearch">
+                <form id="searchFormMobile">
+                    <input type="text" placeholder="Search..." id="searchInputMobile">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!---------- Main Content ---------->
+    <main></main>
+
+     <!---------- Footer ---------->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 NewsHub. All rights reserved.</p>
+            <ul class="footer-nav">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
